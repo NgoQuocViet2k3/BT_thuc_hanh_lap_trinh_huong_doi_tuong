@@ -5,8 +5,8 @@ public class RegularTicket extends Ticket{
     public RegularTicket() {
     }
 
-    public RegularTicket(String ticketId, String movieName, float price) {
-        super(ticketId, movieName, price);
+    public RegularTicket(String ticketId, String movieName, float price, float discount) {
+        super(ticketId, movieName, price, discount);
     }
 
     @Override

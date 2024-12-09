@@ -17,6 +17,8 @@ public class Main {
         regularTicket.setMovieName(sc.nextLine());
         System.out.println("Nhập giá vé:");
         regularTicket.setPrice(sc.nextFloat());
+        System.out.println("Nhap giam gia: ");
+        regularTicket.setDiscount(sc.nextFloat());
         ticketList.add(regularTicket);
         VIPTicket vipTicket = new VIPTicket();
         sc.nextLine();
@@ -27,6 +29,8 @@ public class Main {
         vipTicket.setMovieName(sc.nextLine());
         System.out.println("Nhập giá vé:");
         vipTicket.setPrice(sc.nextFloat());
+        System.out.println("Nhap giam gia: ");
+        vipTicket.setDiscount(sc.nextFloat());
         ticketList.add(vipTicket);
         for (Ticket ticket: ticketList){
             System.out.println(ticket.toString());

@@ -3,6 +3,15 @@ package lab9_bai1;
 public abstract class Ticket {
     private String ticketId, movieName;
     private float price;
+    private float discount;
+
+    public float getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(float discount) {
+        this.discount = discount;
+    }
 
     public abstract float tinhGiaVeCuoi();
     @Override
@@ -18,10 +27,11 @@ public abstract class Ticket {
     public Ticket() {
     }
 
-    public Ticket(String ticketId, String movieName, float price) {
+    public Ticket(String ticketId, String movieName, float price, float discount) {
         this.ticketId = ticketId;
         this.movieName = movieName;
         this.price = price;
+        this.discount = discount;
     }
 
     public String getTicketId() {
